@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SearchValidTests" verbose="1">
+    <test name="invalidSearch1">
+        <parameter name="keyword" value="efghjm"/>
+        <classes>
+            <class name="SearchFunctionalityTest">
+                <methods>
+                    <include name="testInvalidSearch"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="invalidSearch2">
+        <parameter name="keyword" value="tttt"/>
+        <classes>
+            <class name="SearchFunctionalityTest">
+                <methods>
+                    <include name="testInvalidSearch"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+</suite>
